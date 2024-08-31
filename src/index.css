@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.row {
+  @apply flex flex-wrap py-5 px-3
+}
+
+.btn {
+  @apply text-white bg-emerald-600 px-4 py-2 rounded-lg w-full
+}
+
+.product .btn {
+  transition: all 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #10cb2d;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/* categories */
+.card{
+  transition: 0.5s;
+  cursor: pointer;
+  
+
+}
+.card img{
+  height: 300px;
+  gap: 20px;
+}
+.card:hover{
+  box-shadow: 3px 4px 4px 3px #198754;
+  transition: 0.5s;
+}
+.loader {
+  font-size: 10px;
+  width: 5em;
+  height: 5em;
+  position: relative;
+  left: 50%;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+  text-align: center;
+  background-color: black;
+}
+
+ 
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes mulShdSpin{
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+  }
+  .name{
+    font-size: 25px;
+    font-weight:600;
+  }
+  .fa-heart{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .total{
+    background-color: #FFFFFF;
+    font-size: 20px;
+    color: green;
+  }
+  /* brands */
+  .brands{
+    border: 10px red;
+   
+  }
+  .cards img{
+    gap: 20px;
+  }
+  .cards:hover{
+    box-shadow: 3px 4px 4px 3px #198754;
+    transition: 0.5s;
+  }
+  .cartIcon{
+    font-size: 22px;
+  }
+  .orders{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    width: 50%;
+    left: 300px;
+    height: 40vh;
+    box-shadow: 1px 1px 3px 2px;
+  }
+  .orders h1{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .orders p{
+    font-weight: 600;
+  }
+  .immgg{
+    position: relative;
+    left: 300px;
+  }
